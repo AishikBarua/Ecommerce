@@ -66,7 +66,7 @@ form{
 }
 .search-result img {
 width: 100%;
-height: 100%;
+height: 200px;
 object-fit: cover;
 transition: 0.2s ease-in-out;
 }
@@ -95,5 +95,21 @@ transition: 0.2s ease-in-out;
     margin: 30px auto;
     cursor: pointer;
     border-radius: 5px;
-    /*display: none;*/
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .search-result{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
 }
